@@ -1,8 +1,38 @@
-Q. Write an interger representing the long interger value twelve million
+Q. Write an interger representing the long interger value twelve million.
 A. 12000000
 Why. Writing an integer is the same as writing out a number. Note that this is an expression and not a statement so a semicolon should not 
-be used.
+    be used.
 
-Q. Write a hexadecimal integer literal representing the value fifteen
+
+Q. Write a hexadecimal integer literal representing the value fifteen.
 A. 0x0F
-Why. This requires you to know how numbers in hexadecimal work. Numbers in hex go from 0-F (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F).
+Why. This requires you to know how numbers in hex work. Numbers in hex go from 0-F (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F). The 
+    letter 'A' corresponds to 10, 'B' to 11, 'C' to 12, 'D' to 13, 'E' to 14, 'F' to 15. Now the denomination for writing hex values is
+    0x, this goes before the number in Hex you're writing. Now, for the example above, 0xF would also work but it's good practice to use
+    0x0F. 
+
+
+Q. Write a floating point literal corresponding to one and a half. 
+A. 1.5
+Why. Similiar to the first problem, we are writing out an integer. The floating point means that the integer can hold a decimal in the 
+    number.
+  
+  
+Q. Write out a character literal representing a comma.
+A. ','
+Why. The single quotation marks specifies a character literal. The single quotation marks work with and single character. 
+
+
+Q. What literals represent false and true values respectively.
+A. 0, 1
+Why. 0 will always correspond to false and 1 will always correspond to true. 
+
+
+Q. Write a character string literal representing the firs word in this sentence.
+A. "Write"
+Why. While single quotation marks are used to represent single characters, double quotation marks are use to represent strings. 
+
+
+Q. Write a declaration for two integer variables, age and weight.
+A. int age, weight;
+Why. You can declare multiple variables of the same type on the same line by separating them with a comma. 
