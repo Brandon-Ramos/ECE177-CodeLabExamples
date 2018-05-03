@@ -36,3 +36,17 @@ Why. While single quotation marks are used to represent single characters, doubl
 Q. Write a declaration for two integer variables, age and weight.
 A. int age, weight;
 Why. You can declare multiple variables of the same type on the same line by separating them with a comma. 
+
+
+Q. Declare an integer variable cardsInHand and initialize it to 13.
+A. int cardsInHand = 13;
+Why. We are declaring an integer variable so we have to use 'int' to initialize the variable. The variable we are initializing is
+    cardsInHand (int cardsInHand). Finally we have to set it equal to 13. We need to end this with a semicolon because it is a
+    statement and not an expression. Expressions never end with a semicolon!
+    
+Q. Declare a variable temperature and initializze it to 98.6.
+A. Double temperature = 98.6;        //float temperature = 98.6; also works
+Why. Notice the decimal point in the value we want to assign to the variable. This decimal requires to declare the variable 
+    temperature as either a double or a float.
+    
+Q. 
