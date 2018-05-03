@@ -1,1 +1,4 @@
+Q = Question     A = Answer     W = Why
 
+Q    Write a complete program that would print your last name, followed by a comma, followed by your first name. 
+A    int main(){
