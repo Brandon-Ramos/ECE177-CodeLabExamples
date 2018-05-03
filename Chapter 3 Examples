@@ -13,4 +13,18 @@ W   Programs start in main and the text between the curly braces is compiled. Af
     with a curly brace. 
     
     
-Q   Write
+Q   Write a single statement that will print the message "first is " followed by the value of the variable first, followed by a space, 
+    followed by "second = ", followed by the value of second. Print everything on a single line and go to a new line after printing. 
+    Assume the variable first is a double and the variable second is an int.
+A   printf("first is %lf second = %d\n", first, second);
+W   Everything in double quotation marks is being printed. The %lf and %d are functions that will be replaced with the values of the 
+    variables firs and second respectively. The \n in the double quotes tells the compiler to go to a new line after printing. 
+    
+    
+Q   Write an expression that attempts to read an integer from standard output and store it in an int variable x which has already been
+    declared. This expression's value should be true if the attemp was successful but false if no data was read because there was no more
+    data aavailable.
+A   scanf("%d", &x) != EOF;
+W   scanf is mostly the same as printf except it is used to read instead of print. The only other difference is that an ampersand is needed
+    before the variable we are trying to read. Note the use of the != operator, this operator means: is not equal to and EOF stands for end
+    of file. What the above statement does is reads the int variable x as long as there is data available. 
