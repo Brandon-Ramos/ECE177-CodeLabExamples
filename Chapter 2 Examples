@@ -1,52 +1,111 @@
-Q. Write an interger representing the long interger value twelve million.
-A. 12000000
-Why. Writing an integer is the same as writing out a number. Note that this is an expression and not a statement so a semicolon should 
+Q = Question     A = Answer     W = Why
+
+Q   Write an interger representing the long interger value twelve million.
+A   12000000
+W   Writing an integer is the same as writing out a number. Note that this is an expression and not a statement so a semicolon should 
     not be used.
 
 
-Q. Write a hexadecimal integer literal representing the value fifteen.
-A. 0x0F
-Why. This requires you to know how numbers in hex work. Numbers in hex go from 0-F (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F). The 
-    letter 'A' corresponds to 10, 'B' to 11, 'C' to 12, 'D' to 13, 'E' to 14, 'F' to 15. Now the denomination for writing hex values is
-    0x, this goes before the number in Hex you're writing. Now, for the example above, 0xF would also work but it's good practice to use
-    0x0F. 
+Q   Write a hexadecimal integer literal representing the value fifteen.
+A   0x0F
+W   This requires you to know how numbers in hex work. Numbers in hex go from 0-F (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F). 
+    The letter 'A' corresponds to 10, 'B' to 11, 'C' to 12, 'D' to 13, 'E' to 14, 'F' to 15. Now the denomination for writing hex values
+    is 0x, this goes before the number in Hex you're writing. Now, for the example above, 0xF would also work but it's good practice to
+    use 0x0F. 
 
 
-Q. Write a floating point literal corresponding to one and a half. 
-A. 1.5
-Why. Similiar to the first problem, we are writing out an integer. The floating point means that the integer can hold a decimal in the 
+Q   Write a floating point literal corresponding to one and a half. 
+A   1.5
+W   Similiar to the first problem, we are writing out an integer. The floating point means that the integer can hold a decimal in the 
     number.
   
   
-Q. Write out a character literal representing a comma.
-A. ','
-Why. The single quotation marks specifies a character literal. The single quotation marks work with and single character. 
+Q   Write out a character literal representing a comma.
+A   ','
+W   The single quotation marks specifies a character literal. The single quotation marks work with and single character. 
 
 
-Q. What literals represent false and true values respectively.
-A. 0, 1
-Why. 0 will always correspond to false and 1 will always correspond to true. 
+Q   What literals represent false and true values respectively.
+A   0, 1
+W   0 will always correspond to false and 1 will always correspond to true. 
 
 
-Q. Write a character string literal representing the firs word in this sentence.
-A. "Write"
-Why. While single quotation marks are used to represent single characters, double quotation marks are use to represent strings. 
+Q   Write a character string literal representing the firs word in this sentence.
+A   "Write"
+W   While single quotation marks are used to represent single characters, double quotation marks are use to represent strings. 
 
 
-Q. Write a declaration for two integer variables, age and weight.
-A. int age, weight;
-Why. You can declare multiple variables of the same type on the same line by separating them with a comma. 
+Q   Write a declaration for two integer variables, age and weight.
+A   int age, weight;
+W   You can declare multiple variables of the same type on the same line by separating them with a comma. 
 
 
-Q. Declare an integer variable cardsInHand and initialize it to 13.
-A. int cardsInHand = 13;
-Why. We are declaring an integer variable so we have to use 'int' to initialize the variable. The variable we are initializing is
+Q   Declare an integer variable cardsInHand and initialize it to 13.
+A   int cardsInHand = 13;
+W   We are declaring an integer variable so we have to use 'int' to initialize the variable. The variable we are initializing is
     cardsInHand (int cardsInHand). Finally we have to set it equal to 13. We need to end this with a semicolon because it is a
     statement and not an expression. Expressions never end with a semicolon!
     
-Q. Declare a variable temperature and initializze it to 98.6.
-A. Double temperature = 98.6;        //float temperature = 98.6; also works
-Why. Notice the decimal point in the value we want to assign to the variable. This decimal requires to declare the variable 
-    temperature as either a double or a float.
     
-Q. 
+Q   Declare a variable temperature and initializze it to 98.6.
+A   Double temperature = 98.6;        //float temperature = 98.6; also works
+W   Notice the decimal point in the value we want to assign to the variable. This decimal requires to declare the variable 
+    temperature as either a double or a float. NOTE: A decimal haas up to 15 decimal points of precision while float only has 2. 
+    This information will be useful to know and for future problems!
+    
+    
+Q   Write a statement that declares two int variables, num and val, and initialize each to 5.
+A   int num = 5, val = 5;
+W   Both variables are of the int type so we can declare both of them as the int type on the same line. However, each variable must
+    be asssigned its one value or the program will not compile. 
+
+
+Q   Declare an int constant, MonthsInYear, whose value is 12.
+A   const MonthInYear = 12;
+W   const is another type we can declare variables as. This problem is virtually the same as declaring an int variable MonthsInYear 
+    and giving it the value 12. const number cannot be modified with code once they have been declared.
+    
+   
+Q   Write an expression that computes the remainder of the variable principal when divided by the variable divisor.
+A   principal % divisor
+W   To compute the remainder of something the '%' operator is needed. Note that this is an expression so no semicolon is needed.
+
+
+Q   Given two interger variables, distance and speed, write an expression that divides distance by speed. Use floating point arithmetic.
+A   (float) distance / (float) speed
+W   What is happening is we are dividing distance by speed with the addition of floating both sides. The parentheses are needed around
+    float because we are casting variables. 
+    
+    
+Q   Write a statement to find the remainder rem when num is divided by 5.
+A   rem = num % 5;
+W   Here we have remainder is equal to the variable rem and rem. Now rem is equal to the variable num % 5 because the % operator is
+    used when dividing with remainder. Also, the question states that this is a statement so a semicolon is needed at the end. 
+    
+    
+Q   Write a statement using a compound assignment operator to change the variable val to the remainder when val is divided by 16.
+A   val %= 16;
+W   Compound operators preform multiple steps, they both do what is on the left of the operator and change the variable. Some of the
+    compound operators are: %=, /=, +=, -=, etc. So the left side of the compound operator will add, subtract, divide, etc while the 
+    right side (always an '=') will cause the variable to change. So val %= 16 basically mean val = val % 16. So val % 16 is done first
+    then that value is assigned to val (val changes). 
+    
+    
+Q   Write a statement using the increment operator to increase the value of num_items by 1.
+A   num_items++;
+W   The ++ operator adds one to the value of the variable it is attached to. The -- operator will subtract one from the variable it is 
+    attached to (decrement).
+    
+    
+Q   Given two int variables, Number2 and Number3, write some code that will swap their values. Declare any additional variables as
+    necessary.
+A   int x;
+    x = Number2;
+    Number2 = Number3;
+    Number3 = x;
+W   For this we need to declare a variable to use as a place holder, it will store a valure so we can preform the swap. We can then 
+    assign the variable stored in Number2 to x (x = Number2). Now both x xand Number2 are equal. We can then assign the value of
+    Number 3 to Number2 (Number2 = Number3). We gave the value of Number2 to x so we can now assign that value to Number3 (Number3 = x).
+    
+    
+That wasan't every problem but every problem in chapter 2 should be doable now!
