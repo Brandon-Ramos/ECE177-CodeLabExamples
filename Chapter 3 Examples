@@ -1,4 +1,16 @@
 Q = Question     A = Answer     W = Why
 
-Q    Write a complete program that would print your last name, followed by a comma, followed by your first name. 
-A    int main(){
+Q   Write a complete program that would print your last name, followed by a comma, followed by your first name. 
+A   int main(){                 //main(){ would also work
+      int Brandon;
+      int Ramos;
+    printf("Ramos,Brandon);
+    }
+W   Programs start in main and the text between the curly braces is compiled. After starting the program (int main(){), declare 2 variables
+    for both the last and firs name which is to be compiled. To print something you have to use the printf function. What we are printing 
+    is a last name, comma, and a first name in that order with no spaces. So within the printf function, enter what is being asked
+    (printf("Ramos,Brandon")). The double quotation marks are needed because we are printing a string constant. Now just end the program 
+    with a curly brace. 
+    
+    
+Q   Write
