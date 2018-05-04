@@ -1,3 +1,25 @@
 Q = Question     A = Answer     W = Why
 
-Q   Write
+Q   Given the char variable c, write an expression that is true if and only if the value of c is not the space character.
+A   c != ' '
+W   We are given the char variable c which we want to set not equal to the space character. This make it true for all values except for 
+    when c is equal to the space character. The space character is a single character so it has to be in single quotation marks. 
+    
+    
+Q   Write an expression that evaluates to true if and only if the integer variable workedOvertime is true.
+A   workedOvertime                   //workedOvertime && 1  would also work
+W   For this problem we can assume that the variiable workedOvertime has been assigned some non-zero number. This makes it so 
+    workedOvertime always will evaluate to true. Also remember that 1 also represents true, so workedOvertime && (anded) with 1 will also
+    evaluate to true.
+    
+    
+Q   Given the variables temperature and humidity, write an expression that evaluates to true if and only if temperature is greater than 90
+    and humidity is less than 10.
+A   (temperature > 90) && (humidity < 10)  //A single ampersand (&) also works. The parentheses aren't needed, good practice to use them. 
+W   All we want to do is set the variable temperature to greater than 90 (temperature > 90) and we want to and it (&&) with the variable
+    humiidity less than 10 (humidity < 10).
+    
+    
+Q   Given the variables isFullTime and age, write an expression that evaluates to true is and only if age is less that 19 or isFullTime is
+    true. 
+A   (age < 19) || (isFullTime && 1)     // 
