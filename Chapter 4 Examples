@@ -61,3 +61,27 @@ Q   Write a statement that toggles the value of onOffswitch. That is, if onOffsw
     onOffswitch is true, its value is changed to false. 
 A   onOffswitch =! onOffswitch           //onOffswitch = !onOffswitch also works
 W   The =! operator is used to assign the logical inverse of a variable. As in the variable a equals not the variable b (a = !b).
+
+
+Q   Write aa if statement that assigns true (1) to the variable feaver if the variable temperature is greater than 98.6.
+A   if(temperature > 98.8){
+        feaver = 1;
+    }
+W   This is your basic if statement, if the varuable temperature is greater than 98.8 then feaver equals 1. There is no need for curly
+    braces or semicolons for this excerise but it's good practice to start using them. 
+    
+    
+Q   Write an if/else statement that compares the value of the variables soldYesterday and soldToday, and based upon that comparison,
+    assigns salesTrend the value -1 or 1. -1 represents the case where soldYesterday is greater than soldToday; 1 represents the case
+    where soldYesterday is not greater than soldToday.
+A   if (soldYesterday > soldToday){
+        salesTrend = -1;
+    }
+    else{ 
+        salesTrend = 1;
+    }
+W   An if-else statement will do two things. First, it will evaluate one group of statements when an expression is true. When and if the
+    expression is false, another group of statements are executed.
+    
+    
+Q
