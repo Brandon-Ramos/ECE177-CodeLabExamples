@@ -38,3 +38,26 @@ W   So we want to divide our first variable Prizes by our second variable Partic
     
     
 Q   Write an expression that evaluates to true if the integer variable x contains an even value and false if it contains an odd value.
+A   x % 2 == 0
+W   It doesn't matter what value the variable x is assigned, if it is divided by 2 with zero remainder it is going to be even. 
+
+
+Q   Write an expression using the conditional operator (? :) that compares the value of the variable x to 5 and results in:
+    x is x is greater than or equal to 5
+    -x if x is less than 5
+A   (x >= 5) ? x : -x
+W   The conditional operator does three things: The first operand (x >= 5) gets converted to bool, is evaluated, then completed. If the
+    firs toperand is true, the second operand is evaluated (x). If the firs toperand is false, the third operand is evaluated (-x).
+    
+    
+Q   Write an expression using the conditional operator (? :) that compares the value of the variables x and y and results in the larger
+    of the two.
+A   (x > y) ? x : y
+W   If the firs operand (x > y) is true, then the second operand (x) is evaluated. If the firs operand is false then the third operand 
+    is evaluated. 
+    
+    
+Q   Write a statement that toggles the value of onOffswitch. That is, if onOffswitch is false, its value is changed to true; if 
+    onOffswitch is true, its value is changed to false. 
+A   onOffswitch =! onOffswitch           //onOffswitch = !onOffswitch also works
+W   The =! operator is used to assign the logical inverse of a variable. As in the variable a equals not the variable b (a = !b).
