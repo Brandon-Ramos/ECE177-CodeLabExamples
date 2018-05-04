@@ -267,3 +267,37 @@ A   total = 0;
 W   Like always, we want to set total equal to 0 to set it up to store values. Next set up the do statement to add the current value of
     total to the cube of the variable k (total += k * k * k). Finally, set up the while loop to loop for all time the variable k is
     less than the variable n.
+
+
+Q   Write a statement that increments the value of the int variable total by the value of the int variable amount.
+A   total += amount;
+W   Remember that total += amount is the same as total = total + amount. So the variable amount will get added to the variable total
+    and then total is assigned this new value. 
+    
+    
+Q   Write a loop that reads non-negative values into the variable amount and adds them into the variable total. Initialize total to 0.
+A   total = 0;
+    do{
+        scanf("%d", &amount);
+        total += amount;
+    }
+    while(amount >= 0);
+W   We start by setting the variable total to zero like in previous examples. Remeber that to read values we have to use the scanf
+    statement. The values we are trying to read are integers so we are going to use %d and we need an ampersand infornt of the variable
+    we want to read (&amount). After reading these values we then have to add the mto the variable total. total += amount (the variable
+    total changes). Lastly we want to set up the while loop to loop for all time that the variable amount is and positive integer (>0).
+    
+    
+Q   Given that two int variables, total and amount, have been declared, write a sequence of statements that:
+    initializes total to 0
+    reads three values into amount, one at a time.
+    After each value is read in to amount, it is added to the value in total
+A   total = 0;
+    scanf("%d", &amount);
+    total += amount;
+    scanf("%d", &amount);
+    total += amount;
+    scanf("%d", &amount);
+    total += amount;
+W   We don't waant to use a for loop for this. What we want to actually do is read one variable at a time into the variable amount,
+    then add this number to total. 
