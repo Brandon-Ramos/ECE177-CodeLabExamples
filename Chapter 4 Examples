@@ -148,3 +148,97 @@ A   switch(response){
 W   A switch statement more clearly represents multi-branch behavior. What the above code would do is execute the first case whose
     constant expression matches the value of the switch expression. It would then run that case's statement and jump to the end. If no
     case matches then the default case's statement would be executed. 
+    
+    
+Q   Given an int variable k that has already been declared, use a for loop to print a single line of 97 asterisks.
+A   for(k = 1; k <= 97; k++){
+    printf("*");
+    }
+W   We have to set the variable k equal to 1 and for all time where k is is less than or equal to 97, increment k. Each time this
+    process is repeated, print an asterisk.
+    
+    
+Q   Given int variables k and total that have already been declared, use a for loop to compute the sum of the squares of the first 50
+    positive integers and store this value in total. 
+A   total = 0;
+    for(k = 1;k <= 50;k++){
+        total += k*k;
+    }
+W   We have to initialize the variable total equal to zero so we can store values in it. Next we use a for loop to loop for when k is
+    is equal to 1, less than or equal to 50, and increment k. You also want to use the += operator to make sure you are adding values 
+    to the variable total (the variable total changes). Without += total will always be zero.
+    
+    
+Q   Write a for loop that prints the integers 1 through 40, separated by spaces or new lines. Use only one variable named count.
+A   for(count = 1;count <= 40;count++)
+    {
+    printf("%d\n", count );
+    }
+W   This is mostly the same setup as when we were printing asterisks except we want to print integers instead. We want to print the 
+    integer value of count so we are going to use %d because thate is the standard for printing integers. Then it's just your basic
+    printf statement to print the integers of the variable count.
+    
+    
+Q   Write a for loop that computes the following sum: 5+10+15+20+...+485+490+495+500. The sum should be placed in a variable sum that
+    has already been declared and initialized to 0. In addition, there is another variable, num that has also been declared. You must
+    not use any other variables.
+A   for(num = 0; num <= 500; num += 5){
+        sum += num;
+    }
+W   Start with a basic for loop that gives the variable num a range between 0 and 500 and also increments num by 5 (num += 5). So the
+    above for loop loops through every 5th value between the range 0 through 500. The sum += num makes sit so the variable sum is equal
+    to sum plus the value of num (sum = sum + num). 
+    
+    
+Q   Assume that the int variables i and j have been declared, and that n has been declared and initialized. Write code that causes a 
+    "triangle" of asterisks of size n to be output to the screen. Specifically, n lines should be printed out, the first consisting 
+    of a single asterisk, the second consisting of two asterisks, the third consisting of three, etc. The last line should consist of
+    n asterisks. 
+A   for(i = 1; i <= n; i++) { 
+        for(j = 1; j <= i; ++j) { 
+        printf("*"); 
+        } 
+        printf("\n"); 
+    }
+W   The first for loop determines how many rows are to be printed. In this case, we want n rows to be printed. The second for loop 
+    determines how many asterisks are to be printed. We want at least one row and one asterisk so both variable, i and j, have to be 
+    set to 1. For the firs for loop (number of rows) we want n rows so set the variable i less than or equal to the variable n.
+    
+    
+Q   Assume the int variables i and result, have been declared but not initialized. Write a for loop header -- i.e. something of the 
+    form for (  .   .   .   ). When the loop terminates, result should hold the product of the odd numbers between 10 and 20.
+A   for(i = 11, result = 1; i < 20; i += 2)
+W   Notice we want values between 10 and 20 so set the variable i greater than 11. Next we want the value to be stored in the variable
+    result so use the variable result next and set it equal to 1. Next finish the range for i (we are only asked for odd values so 20
+    doesnt matter (i < 20)). Again, we only want odd values so counting up from 11 use i += 2 (same as i = i + 2).
+    
+    
+Q   Writr a for loop that adds the integers between lo and hi and stores the result in the variable result. Only use variable: lo, hi,
+    i, and result.
+A   for(i = lo; i <= hi; i++){
+        result += i;
+    }
+W   Don't let the wording confuse you, between variables lo and hi might as well be between 22 and 41 or and other values. Then just
+    set the problem up like you would for any other for loop. Lastly, we want to store the result in the variable result so
+    (result += i;).
+    
+    
+Q   Use a while loop to print a single line of 97 asterisks using the variable k.
+A   while(k < 97){
+        printf("*");
+        k++;
+    }
+W   What the above while loop is saying is: while the variable k is less than 97, print an asterisk, then increment k. The above while
+    loop will repeat until the variable k is no longer less than 97. Know that the variable k starts at 0 so exactly 97 asterisks will 
+    be prints.
+    
+    
+Q   Use a while loop to print the sum of squares of the first 50 positive integers and store this value in the variable total. 
+A   total = 0;
+    while(k <= 50){
+        total += k + k;
+        k++;
+    }
+W   Set total equal to zero to set it up to store values. Then set up the while loop to loop through all positive integers between 0
+    and 50 (while(k <= 50)). Next we want to store these value in the variable total (total += k * k). This multiplies the variable k
+    by k (squaring k) then adds that value to total. Total is then assigned this new total. 
