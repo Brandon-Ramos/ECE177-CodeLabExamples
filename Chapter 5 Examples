@@ -24,6 +24,6 @@ Q   max is a function that accepts two int parameters and returns the value of t
     population2, population3, and population4 have already been declared and initialized. Write an expression (not a statement!) whose 
     value is the largest of population1, population2, population3, and population4 by calling max. 
 A   max(population1, max(population2, max(population3, population4)))
-W   Operator precedence is everything here. The first function to be evaluated is the max(population3, population4) function. It will take
-    the larger of the two vaules and return it. Next max(population2, max) is evaluated. Notice that population2 is now being evaluated
-    against the new value of the function max. Now the final max(population1, max) expression is evaluated.
+W   Operator precedence is everything here. The first function to be evaluated is the max(population3, population4) function. It will 
+    take the larger of the two vaules and return it. Next max(population2, max) is evaluated. Notice that population2 is now being 
+    evaluated against the new value of the function max. Now the final max(population1, max) expression is evaluated.
