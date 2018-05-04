@@ -242,3 +242,5 @@ A   total = 0;
 W   Set total equal to zero to set it up to store values. Then set up the while loop to loop through all positive integers between 0
     and 50 (while(k <= 50)). Next we want to store these value in the variable total (total += k * k). This multiplies the variable k
     by k (squaring k) then adds that value to total. Total is then assigned this new total. 
+
+
