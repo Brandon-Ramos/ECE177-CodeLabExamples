@@ -1,1 +1,29 @@
+Q = Question     A = Answer     W = Why
 
+Q   Write a statement that calls printTodaysdate, it accepts no parameters and returns no value.
+A   void printTodaysdate();   
+W   This is a basic function call, it causes a functions statement to be executed.
+
+
+Q   Write a statement calling the function printError, passing it the value 14.
+A   printError(14);
+W   What is in the parentheses is the parameter we are passing through the function. We could add multiple parameters by separating the
+    values with commas.
+
+
+Q   add is a function that accepts two int parameters and returns their sum. Two int variables, euroSales and asiaSales, have already
+    been declared and initialized. Another int variable, eurasiaSales, has already been declared. Write a statement that calls add to 
+    compute the sum of euroSales and asiaSales and store this value in eurasiaSales.
+A   eurasiaSales = add(euroSales, asiaSales);
+W   Notice what the function add does in the question. It accepts two int parameters that we pass through it and adds them together. So
+    we want to call the add function and pass it the variasbles (parameters) euroSales and asiaSales, Finally, we want to store the sum
+    in the variable eurasiaSales. So we set eurasiaSales equal to the function add with the two parameters being passed through it.
+    
+    
+Q   max is a function that accepts two int parameters and returns the value of the larger one. Four int variables, population1, 
+    population2, population3, and population4 have already been declared and initialized. Write an expression (not a statement!) whose 
+    value is the largest of population1, population2, population3, and population4 by calling max. 
+A   max(population1, max(population2, max(population3, population4)))
+W   Operator precedence is everything here. The first function to be evaluated is the max(population3, population4) function. It will take
+    the larger of the two vaules and return it. Next max(population2, max) is evaluated. Notice that population2 is now being evaluated
+    against the new value of the function max. Now the final max(population1, max) expression is evaluated.
