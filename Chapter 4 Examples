@@ -84,4 +84,17 @@ W   An if-else statement will do two things. First, it will evaluate one group o
     expression is false, another group of statements are executed.
     
     
-Q
+Q   Write an if/else statement that adds 1 to the variable minors if the variable age is less than 18, adds 1 to the variable adults if
+    age is 18 through 64, and adds 1 to the variable seniors if age is 65 or older.
+A   if(age < 18){
+        minors += 1;
+    }
+    else if(age >= 18 && age <= 64){
+        adults += 1;
+    }
+    if(age > 64){
+        seniors += 1;
+    }
+W   A lot of things are coming together for this question. First, start with a basic if statement for adding 1 to the variable minors
+    for when age is less than 18. Then go into an else if statement for the second range of values (age is between 18 and 64). The final
+    if statement is used to cover all ages above 65. 
