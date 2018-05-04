@@ -9,13 +9,13 @@ W   We are given the char variable c which we want to set not equal to the space
 Q   Write an expression that evaluates to true if and only if the integer variable workedOvertime is true.
 A   workedOvertime                   //workedOvertime && 1  would also work
 W   For this problem we can assume that the variiable workedOvertime has been assigned some non-zero number. This makes it so 
-    workedOvertime always will evaluate to true. Also remember that 1 also represents true, so workedOvertime && (anded) with 1 will also
-    evaluate to true.
+    workedOvertime always will evaluate to true. Also remember that 1 also represents true, so workedOvertime && (anded) with 1 will
+    also evaluate to true.
     
     
 Q   Given the variables temperature and humidity, write an expression that evaluates to true if and only if temperature is greater than 
     90 and humidity is less than 10.
-A   (temperature > 90) && (humidity < 10)  //A single ampersand (&) also works. The parentheses aren't needed, good practice to use them. 
+A   (temperature > 90) && (humidity < 10)  //A single ampersand (&) also works. The parentheses aren't needed, good practice to use. 
 W   All we want to do is set the variable temperature to greater than 90 (temperature > 90) and we want to and it (&&) with the variable
     humiidity less than 10 (humidity < 10).
     
@@ -23,18 +23,18 @@ W   All we want to do is set the variable temperature to greater than 90 (temper
 Q   Given the variables isFullTime and age, write an expression that evaluates to true is and only if age is less that 19 or isFullTime 
     is true. 
 A   (age < 19) || (isFullTime && 1)     //(age < 19) || (isFullTime) will also work
-W   The only new element here is the logiical or operator (||). We have to use the logical or operator and not the bitwise or operator (|)
-    because we want both sides of the expression to be evaluated. The bitwise or operator (single |) will not evaluate the second argument
-    if the first argument evaluated to true. The logical or operator (||) will evaluate both sides of the expression regardless. Similary,
-    the logical and operator (&&) doesn't evaluate the second argument if the firs is false, bitwise does. 
+W   The only new element here is the logiical or operator (||). We have to use the logical or operator and not the bitwise or operator 
+    (|)because we want both sides of the expression to be evaluated. The bitwise or operator (single |) will not evaluate the second
+    argument if the first argument evaluated to true. The logical or operator (||) will evaluate both sides of the expression 
+    regardless. Similary, the logical and operator (&&) doesn't evaluate the second argument if the firs is false, bitwise does. 
 
 
 Q   Write an expression that evaluates to true if the value of the interger variable Prizes is divisible (with no remainder) by the
     integer variable Participants.
 A   Prizes % Participants == 0
-W   So we want to divide our first variable Prizes by our second variable Participants. We want to use the remainder operator (%) because
-    we want a remainer. The remainder we want is zero so divide the variable Prizes by the variable Participants evaluated to ture when 
-    the remainder is zero. Use the doubles equals (==) because we do want to make Prizes % Participants equal to zero. 
+W   So we want to divide our first variable Prizes by our second variable Participants. We want to use the remainder operator (%) 
+    because we want a remainer. The remainder we want is zero so divide the variable Prizes by the variable Participants evaluated to
+    ture when the remainder is zero. Use the doubles equals (==) because we do want to make Prizes % Participants equal to zero. 
     
     
 Q   Write an expression that evaluates to true if the integer variable x contains an even value and false if it contains an odd value.
