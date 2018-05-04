@@ -98,3 +98,53 @@ A   if(age < 18){
 W   A lot of things are coming together for this question. First, start with a basic if statement for adding 1 to the variable minors
     for when age is less than 18. Then go into an else if statement for the second range of values (age is between 18 and 64). The final
     if statement is used to cover all ages above 65. 
+
+
+Q   Write an if/else statement that compares the double variable pH with 7.0 and makes the following assignments to the int variables
+    neutral, base, and acid:
+    0, 0, 1 if pH is less than 7
+    0, 1, 0 if pH is greater than 7
+    1, 0, 0 if pH is equal to 7
+A   if(pH < 7.0){
+        neutral = 0;
+        base = 0;
+        acid = 1;
+    }
+    else if(pH > 7.0){
+        neutral = 0;
+        base = 1;
+        acid = 0;
+    }
+    if(pH == 7.0){
+        neutral = 1;
+        base = 0;
+        acid = 0;    
+    }
+W   The setup of this problem is the most confusing and that's what makes it hard. Start with a basic if statement for when the variable
+    pH is less than 7.0 (if(pH > 7.0)). Then assign the values 0, 0, and 1 to the int variables neutral, base, and acid respectively. 
+    Now create an else if statement for the second range (when pH is greater that 7.0). Assign the respective values to the variables
+    neutral, base, and acid. Finish with one last if statement like in the previous problem for the final case (pH is equal to 7.0).
+    
+    
+Q   Write a switch statement that tests the value of the char variable response and performs the following actions:
+    if response is y, the message Your request is being processed is printed
+    if response is n, the message Thank you anyway for your consideration is printed
+    if response is h, the message Sorry, no help is currently available is printed
+    for any other value of response, the message Invalid entry; please try again is printed
+A   switch(response){
+    case 'y':
+    printf("Your request is being processed");
+    break;
+    case 'n':
+    printf("Thank you anyway for your consideration");
+    break;
+    case 'h':
+    printf("Sorry, no help is currently available");
+    break;
+    default:
+    printf("Invalid entry; please try again");
+    break;
+    }
+W   A switch statement more clearly represents multi-branch behavior. What the above code would do is execute the first case whose
+    constant expression matches the value of the switch expression. It would then run that case's statement and jump to the end. If no
+    case matches then the default case's statement would be executed. 
