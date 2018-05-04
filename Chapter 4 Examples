@@ -244,3 +244,26 @@ W   Set total equal to zero to set it up to store values. Then set up the while 
     by k (squaring k) then adds that value to total. Total is then assigned this new total. 
 
 
+Q   Use a do....while loop to print a single line of consisting of 97 using only the variable k.
+A   do{
+        printf("*");
+        k++;
+    }
+    while(k < 97);
+W   Think of this as a while loop but reversed. First we want to set up what we want to do. In the above case, we want to print 
+    asterisks and increment k. Then go in to the while loop and set it up to loop while k is less that 97. Remember that k starts at 
+    zero so exactly 97 asterisks will be printed. 
+    
+    
+Q   Use a do while loop to compare the sum of cubes of the first n whole numbers and store this value in the variable total. Use only
+    the variables n, k, and total.
+A   total = 0;
+    k = 1;          //You can also set k equal to zero but it's pointless because zero cubed is 0
+    do{
+        total += k * k * k;
+        k++;
+    }
+    while(k <= n);
+W   Like always, we want to set total equal to 0 to set it up to store values. Next set up the do statement to add the current value of
+    total to the cube of the variable k (total += k * k * k). Finally, set up the while loop to loop for all time the variable k is
+    less than the variable n.
