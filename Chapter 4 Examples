@@ -37,4 +37,4 @@ W   So we want to divide our first variable Prizes by our second variable Partic
     the remainder is zero. Use the doubles equals (==) because we do want to make Prizes % Participants equal to zero. 
     
     
-Q
+Q   Write an expression that evaluates to true if the integer variable x contains an even value and false if it contains an odd value.
