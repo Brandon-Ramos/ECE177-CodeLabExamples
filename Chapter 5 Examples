@@ -36,7 +36,26 @@ A   printDottedLine(){         //void printDottedLine(){ also works
     }
 W   The definition of the function printDottedLine doesn't accept any parameters. To declare this simply call the function without 
     passing through it any parameters (printDottedLine(){). The next step is to print a single line of 5 periods terminated by a new 
-    line (printf(".....\n");).
+    line(printf(".....\n");).
     
     
-Q   
+Q   Write the definition of a function printGrade, which has a char parameter and returns nothing. The function prints on a line by
+    itself the message string Grade: followed by the char parameter to standard output. Don't forget to put a new line character at 
+    the end of your line.
+A   void printGrade(char Grade){
+        printf("Grade: %c\n", Grade);
+    }
+W   The parameter that is being passed through the function isn't directly stated but it is Grade. So start by setting of the definition
+    of the function printGrade and pass thorugh it the character parameter Grade (void printGrade(char Grade){). Next we want to print 
+    Grade: followed by the char parameter (printf("Grade: %c\n", Grade);). So use the print f statement to print the message Grade: then
+    use %c to read a character value. 
+    
+    
+Q   Write the definition of the function twice, which receives an interger parameter and returns an integer that is twice the value of
+    the parameter. 
+A   twice(int a){
+        return a * 2;
+    }
+W   This function returns a value so we cannot use void here, I think that's the reason why. All we have to do is declare and initialize
+    some variable that we can later return, in this case I have passed an integer 'a' through the function. Finally just write the 
+    return statement to return twice the integer you passed through the function. 
