@@ -27,3 +27,16 @@ A   max(population1, max(population2, max(population3, population4)))
 W   Operator precedence is everything here. The first function to be evaluated is the max(population3, population4) function. It will 
     take the larger of the two vaules and return it. Next max(population2, max) is evaluated. Notice that population2 is now being 
     evaluated against the new value of the function max. Now the final max(population1, max) expression is evaluated.
+
+
+Q   Write the definition of a function printDottedLine, which has no parameters and doesn't return anything. The function prints to 
+    standard output a single line (terminated by a new line character) consisting of 5 periods.
+A   printDottedLine(){         //void printDottedLine(){ also works
+        printf(".....\n");
+    }
+W   The definition of the function printDottedLine doesn't accept any parameters. To declare this simply call the function without 
+    passing through it any parameters (printDottedLine(){). The next step is to print a single line of 5 periods terminated by a new 
+    line (printf(".....\n");).
+    
+    
+Q   
