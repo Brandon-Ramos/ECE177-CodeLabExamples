@@ -59,3 +59,33 @@ A   twice(int a){
 W   This function returns a value so we cannot use void here, I think that's the reason why. All we have to do is declare and initialize
     some variable that we can later return, in this case I have passed an integer 'a' through the function. Finally just write the 
     return statement to return twice the integer you passed through the function. 
+
+
+Q   Write the definition of a function dashedLine, with one parameter, an int. If the parameter is negative or zero, the function does
+    nothing. Otherwise it prints a complete line terminated by a new line character to standard output consisting of dashes (hyphens) 
+    with the parameter's value determining the number of dashes. The function returns nothing.
+A   dashedLine(int a){
+    if(a > 0){
+        int i;
+        for(i = 0; i < a; i++){
+          printf("-");
+        }
+        printf("\n");
+        }
+    }
+W   To start, the function dashedLine has one parameter, an int. For the question above I declared the variable 'a' as the integer 
+    parameter (dashedLine(int a)). Now, if the function is zero or less it will do nothing so set up the if statement to to loop for
+    when a is greater than zero (if(a > 0){). Next we have to use a for loop to loop depending on the users input. The above for loop 
+    works because even if the variable 'a' is 1, the variable 'i' is set equal to zero so i < a is true so a single hyphen would print.
+    
+    
+Q   Given the integer variables x, y, and z, write a fragment of code that assigns the smallest of x, y, and z to another integer
+    variable min.
+A   min = x;
+    if(y < min)
+    min = y; 
+    if(z < min)
+    min = z;
+W   Assign the value of the variable x to the variable min. After min hasa been assigned a value we can test it against the other 
+    variables we have. If y is less than min then the value of y is stored in min. Lastly, if z is less than min then the value of z is
+    stored in min. 
